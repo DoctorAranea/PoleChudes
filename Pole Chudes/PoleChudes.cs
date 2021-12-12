@@ -1124,7 +1124,10 @@ namespace Pole_Chudes
                 }
                 else
                 {
-                    name = value;
+                    if (value.Length > 13)
+                        name = value.Substring(0, 13);
+                    else
+                        name = value;
                 }
             }
         }
